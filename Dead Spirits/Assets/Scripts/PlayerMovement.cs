@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
+
     public Camera cam;
     public float runSpeed = 20.0f;
 
@@ -12,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontal;
     float vertical;
+    public Animator animator;
 
     
 
@@ -25,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
         vertical = Input.GetAxisRaw("Vertical"); 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         
+        animator.SetFloat("Horizontal", horizontal);
+        animator.SetFloat("Vertical", vertical);
     }
 
     private void FixedUpdate(){  
