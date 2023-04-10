@@ -14,7 +14,12 @@ public class PlayerMovement : MonoBehaviour
     float horizontal;
     float vertical;
     public Animator animator;
-
+    private float inhibitMovement; 
+    public bool canMove{get
+    {
+        return animator.GetBool("canMove");
+    }
+    }
     
 
     void Start(){
@@ -23,12 +28,32 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Update(){
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical"); 
+        if(canMove){
+            horizontal = Input.GetAxisRaw("Horizontal");
+            vertical = Input.GetAxisRaw("Vertical"); 
+        }else{
+            horizontal = 0;
+            vertical = 0;
+        }
+        
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         
         animator.SetFloat("Horizontal", horizontal);
         animator.SetFloat("Vertical", vertical);
+
+
+        
+        if(horizontal == 0 & vertical == 0){
+            animator.SetBool("Walking", false);
+        }else{
+            animator.SetBool("Walking", true);
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            animator.SetTrigger("Attack");
+        }
+
     }
 
     private void FixedUpdate(){  
@@ -38,4 +63,5 @@ public class PlayerMovement : MonoBehaviour
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
         // int animationIdx = ChangeSprite(angle);
     }
+
 }
