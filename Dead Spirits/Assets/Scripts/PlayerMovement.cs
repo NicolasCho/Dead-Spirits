@@ -21,6 +21,18 @@ public class PlayerMovement : MonoBehaviour
         return animator.GetBool("canMove");
     }
     }
+
+    public bool canInput{get
+    {
+        return animator.GetBool("canInput");
+    }
+    }
+
+    public bool canDodge{get
+    {
+        return animator.GetBool("canDodge");
+    }
+    }
     
 
     void Start(){
@@ -50,14 +62,24 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Walking", true);
         }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector2 lookDir = mousePos - rb.position;
-            mouseAngle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
-            animator.SetFloat("Angle", mouseAngle);
-            animator.SetTrigger("Attack");
-        }
+        if(canInput){
+            if (Input.GetMouseButtonDown(0))
+                {
+                    Vector2 lookDir = mousePos - rb.position;
+                    mouseAngle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
+                    animator.SetFloat("Angle", mouseAngle);
+                    animator.SetTrigger("Attack");
+                }
 
+                if(canDodge){
+                    if (Input.GetKeyDown("space"))
+                    {
+                        animator.SetTrigger("Dodge");
+                    }  
+                }
+                
+
+        }
     }
 
     private void FixedUpdate(){  
