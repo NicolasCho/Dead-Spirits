@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontal;
     float vertical;
+    float mouseAngle;
     public Animator animator;
     private float inhibitMovement; 
     public bool canMove{get
@@ -51,6 +52,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            Vector2 lookDir = mousePos - rb.position;
+            mouseAngle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
+            animator.SetFloat("Angle", mouseAngle);
             animator.SetTrigger("Attack");
         }
 
@@ -59,8 +63,6 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate(){  
         rb.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
 
-        Vector2 lookDir = mousePos - rb.position;
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
         // int animationIdx = ChangeSprite(angle);
     }
 
