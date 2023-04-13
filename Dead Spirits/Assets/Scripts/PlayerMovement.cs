@@ -71,12 +71,16 @@ public class PlayerMovement : MonoBehaviour
                     animator.SetTrigger("Attack");
                 }
 
-                if(canDodge){
-                    if (Input.GetKeyDown("space"))
-                    {
-                        animator.SetTrigger("Dodge");
-                    }  
-                }
+            if(canDodge){
+                if (Input.GetKeyDown("space"))
+                {
+                    animator.SetTrigger("Dodge");
+                }  
+            }
+
+            if (Input.GetMouseButtonDown(1)){
+                animator.SetTrigger("Cast");
+            }
                 
 
         }
