@@ -92,6 +92,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.tag == "Enemy"){
+            animator.SetTrigger("Damaged");
             GetComponent<PlayerManager>().TakeDamage();
         }
     }

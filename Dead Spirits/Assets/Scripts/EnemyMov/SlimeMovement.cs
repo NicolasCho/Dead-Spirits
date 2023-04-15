@@ -9,6 +9,7 @@ public class SlimeMovement : MonoBehaviour{
     public float attackRange;
     public Animator animator;
     public bool canMove = true;
+    public bool damagedTime = false;
 
 
     void Update (){
@@ -34,17 +35,34 @@ public class SlimeMovement : MonoBehaviour{
     IEnumerator AttackCoroutine()
     {   
         yield return new WaitForSeconds(1f);
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime*1f);
+        if (!damagedTime)
+          transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime*1f);
         animator.SetTrigger("Attack");
+        yield return new WaitForSeconds(1f);
         canMove = false;
+        yield return new WaitForSeconds(3f);
+        canMove = true;
+    }
 
+    IEnumerator stopMovement(){
+        damagedTime = true;
+        float time;
         float timer = 0f;
-        float time = 2f;
+        
+        time = 4f;
         while(timer < time){
             timer += Time.deltaTime;
             yield return null;
         }
-        canMove = true;
+        damagedTime = false;
+    }
+
+    void OnTriggerEnter2D(Collider2D other){
+        if (other.gameObject.tag == "PlayerAttack"){
+            GetComponent<EnemyManager>().TakeDamage();
+            animator.SetTrigger("Damaged");
+            StartCoroutine(stopMovement());
+        }
     }
 
 }
