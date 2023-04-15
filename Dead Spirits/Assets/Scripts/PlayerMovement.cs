@@ -88,8 +88,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate(){  
         rb.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+    }
 
-        // int animationIdx = ChangeSprite(angle);
+    void OnTriggerEnter2D(Collider2D other){
+        if (other.gameObject.tag == "Enemy"){
+            GetComponent<PlayerManager>().TakeDamage();
+        }
     }
 
 }
