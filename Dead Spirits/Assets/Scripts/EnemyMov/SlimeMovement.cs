@@ -55,15 +55,18 @@ public class SlimeMovement : MonoBehaviour{
             timer += Time.deltaTime;
             yield return null;
         }
-        if (kill)
+        if (kill){
             Instantiate(spirit, transform.position, Quaternion.identity);
+            SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+            sprite.enabled = false;
             yield return new WaitForSeconds(2f);
             Destroy(this.gameObject);
+        }    
         damagedTime = false;
     }
 
     void OnTriggerEnter2D(Collider2D other){
-        if (other.gameObject.tag == "PlayerAttack"){
+        if (other.gameObject.tag == "PlayerAttack" || other.gameObject.tag == "SummonedSpirit"){
             GetComponent<EnemyManager>().TakeDamage();
             if (GetComponent<EnemyManager>().HP == 0){
                 canMove=false;
@@ -72,9 +75,7 @@ public class SlimeMovement : MonoBehaviour{
             }else{
                 animator.SetTrigger("Damaged");
                 StartCoroutine(stopMovement(false));
-            }
-            
+            } 
         }
     }
-
 }

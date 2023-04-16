@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4fd019264781fce4a9e8eb9d0ca1a55a
+guid: 68a1bf4b00f837f438846c7a2ac455a8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,631 +129,631 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: minion_0
+      name: minion_reverse_0
       rect:
         serializedVersion: 2
         x: 0
         y: 80
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eaf8484350596b242879d3879c97f4c3
-      internalID: 847024760
+      spriteID: 1c896b7e5c569c24faebf7f8634aaf88
+      internalID: -78884819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_1
+      name: minion_reverse_1
       rect:
         serializedVersion: 2
         x: 40
         y: 80
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bed1ce92e851135468a9fc807ff7bb99
-      internalID: -871547880
+      spriteID: bc8f24f66a463ad46bee1dccbfca0b32
+      internalID: 296608636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_2
+      name: minion_reverse_2
       rect:
         serializedVersion: 2
         x: 80
         y: 80
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a7be4fc632d7654e98531396511ed2c
-      internalID: 1589892088
+      spriteID: 9bffc1885a105d440b48a307eeb7ea1c
+      internalID: 292472030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_3
+      name: minion_reverse_3
       rect:
         serializedVersion: 2
         x: 120
         y: 80
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eac9ce6f2896cdd44baf54076c344512
-      internalID: -231784458
+      spriteID: 870673df9bf04ca4181a8cdd3a1c6683
+      internalID: 697021087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_4
+      name: minion_reverse_4
       rect:
         serializedVersion: 2
         x: 160
         y: 80
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39af7c9e417599245bdd0351acd37038
-      internalID: 247755456
+      spriteID: 82edaa2a8659ef647bb175750e9b350d
+      internalID: -513552117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_5
+      name: minion_reverse_5
       rect:
         serializedVersion: 2
         x: 200
         y: 80
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 115cb1e4210b57b47bc1f0c87778f46d
-      internalID: -527563053
+      spriteID: 021790f480e4faf49a61cd638308e36b
+      internalID: -676086507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_6
+      name: minion_reverse_6
       rect:
         serializedVersion: 2
         x: 240
         y: 80
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69db7808d0eac0f448d33a5e7e034ab8
-      internalID: -1380630096
+      spriteID: 3b3667b368ec7e54691986ce170078af
+      internalID: -1558541378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_7
+      name: minion_reverse_7
       rect:
         serializedVersion: 2
         x: 280
         y: 80
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 011f40ee36549374898688ee788ff95d
-      internalID: -588007228
+      spriteID: fc4bdc9f01d20c94fa27f167ae11f835
+      internalID: -999618542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_8
+      name: minion_reverse_8
       rect:
         serializedVersion: 2
         x: 320
         y: 80
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4db13e9f89f96354792c1e38fbf65444
-      internalID: -1049804608
+      spriteID: 1c97c3c5eb0d2a745810c8b615799009
+      internalID: -1604930693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_9
+      name: minion_reverse_9
       rect:
         serializedVersion: 2
         x: 360
         y: 80
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fc75fa099e9a3b428fcc5b992b0b063
-      internalID: 1524689567
+      spriteID: 80abbf00c5e571e4488cec7563f0368f
+      internalID: 476120726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_10
+      name: minion_reverse_10
       rect:
         serializedVersion: 2
         x: 0
         y: 40
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51a333e76e993874c9390217cfd51832
-      internalID: -1193035177
+      spriteID: 425f5c59f0a42bd4cbadaa1b70d6e7f1
+      internalID: -2074735552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_11
+      name: minion_reverse_11
       rect:
         serializedVersion: 2
         x: 40
         y: 40
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a5ca58570302bc46834ebf77ab66f42
-      internalID: 1157853620
+      spriteID: a36af61281883bc4caef9dca2911c6c2
+      internalID: -1250099612
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_12
+      name: minion_reverse_12
       rect:
         serializedVersion: 2
         x: 80
         y: 40
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8d4eb632710b4642926030093c90f21
-      internalID: 1220614646
+      spriteID: 18917e75078be854ab2d675f6a7e1ac3
+      internalID: -1901339103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_13
+      name: minion_reverse_13
       rect:
         serializedVersion: 2
         x: 120
         y: 40
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cec49984650fdda4b9f155d25a41c179
-      internalID: -69059648
+      spriteID: 4f8dd02135e045a408d28b2fd0f4bede
+      internalID: -532932158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_14
+      name: minion_reverse_14
       rect:
         serializedVersion: 2
         x: 160
         y: 40
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96fc5177f070df145ba18b3a957643c9
-      internalID: 1100007330
+      spriteID: 0b96c309eed386441b8fe9bfdb6594d4
+      internalID: -1082798602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_15
+      name: minion_reverse_15
       rect:
         serializedVersion: 2
         x: 200
         y: 40
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14be1aa871203ec4e9c6ebacb663645a
-      internalID: -444811657
+      spriteID: edd7333fd5cb31d44be7422e34e24fcf
+      internalID: 2010009516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_16
+      name: minion_reverse_16
       rect:
         serializedVersion: 2
         x: 240
         y: 40
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53dba5d1835ca954f8fed56176b8ae7c
-      internalID: 1615385173
+      spriteID: 943b1b05bff7fe1429e438cd3bd7ab33
+      internalID: -1205442521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_17
+      name: minion_reverse_17
       rect:
         serializedVersion: 2
         x: 280
         y: 40
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 573f4aac8cd5dac47921b6fa5db6c9bc
-      internalID: -2102776289
+      spriteID: 0b8f5b8a21b9a9142ba2ad6878741b52
+      internalID: -1994404177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_18
+      name: minion_reverse_18
       rect:
         serializedVersion: 2
         x: 320
         y: 40
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4d2917e5b953c041b006021e4c2d04c
-      internalID: -1001335795
+      spriteID: 8a6f25911188b434a8eebe34faa9275a
+      internalID: -1243097940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_19
+      name: minion_reverse_19
       rect:
         serializedVersion: 2
         x: 360
         y: 40
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32696481865ae494b85b0cd213f41123
-      internalID: -428384647
+      spriteID: 620c1337fba188641b2bec342c9b05ca
+      internalID: 1649401598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_20
+      name: minion_reverse_20
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24147e0105e33b54eaee8b8e28bea567
-      internalID: 1245301182
+      spriteID: 359456a13aa2c2d48ac30b46333b86ed
+      internalID: -1594756209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_21
+      name: minion_reverse_21
       rect:
         serializedVersion: 2
         x: 40
         y: 0
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07da05276035d2247819b5bf00072978
-      internalID: 125956325
+      spriteID: 1ab0b51685c88ec46898a0b8c313f205
+      internalID: -282585161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_22
+      name: minion_reverse_22
       rect:
         serializedVersion: 2
         x: 80
         y: 0
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2413fc5dfc10a7b4eb2407798d93ecb8
-      internalID: -735252549
+      spriteID: 41201c0c324b5644a9686560135085c3
+      internalID: -1131682084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_23
+      name: minion_reverse_23
       rect:
         serializedVersion: 2
         x: 120
         y: 0
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5aeb266e9665f4e43abdfc091a6e868e
-      internalID: -820389650
+      spriteID: 059f8ae8314e78c49b10f4da7fd14a3f
+      internalID: -2004779151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_24
+      name: minion_reverse_24
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78b11201efda8db4f9ef85008a5bea59
-      internalID: -801332018
+      spriteID: 7bc42839c24af1c4da7052dc3c4959fe
+      internalID: 1797041757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_25
+      name: minion_reverse_25
       rect:
         serializedVersion: 2
         x: 200
         y: 0
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46162963d0797e040b6edd8085b965aa
-      internalID: -462449879
+      spriteID: 78335f6f50f55a94abb80a4f220d8edf
+      internalID: -902825106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_26
+      name: minion_reverse_26
       rect:
         serializedVersion: 2
         x: 240
         y: 0
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0226cfa64ad307942a098586409549bd
-      internalID: 1961514394
+      spriteID: f9f93861ac27a764683891e95471fdb1
+      internalID: -819160478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_27
+      name: minion_reverse_27
       rect:
         serializedVersion: 2
         x: 280
         y: 0
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fe96e19e90e13e4392fdf2015b79593
-      internalID: -1221754677
+      spriteID: 4123854133739ed40b53286a4d94ed7b
+      internalID: 228414187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_28
+      name: minion_reverse_28
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5ddbc084bac3064a88bc52774906ef8
-      internalID: 968495616
+      spriteID: b5f0a63c7a6e7e94db9fc60cd335c43b
+      internalID: -1514648036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minion_29
+      name: minion_reverse_29
       rect:
         serializedVersion: 2
         x: 360
         y: 0
         width: 40
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1763d8bd6519a6f42ad8a24c05f347b5
-      internalID: -1387561927
+      spriteID: dd7c0146f6c417a478dee68de65b3384
+      internalID: -1327805845
       vertices: []
       indices: 
       edges: []
@@ -769,36 +769,36 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      minion_0: 847024760
-      minion_1: -871547880
-      minion_10: -1193035177
-      minion_11: 1157853620
-      minion_12: 1220614646
-      minion_13: -69059648
-      minion_14: 1100007330
-      minion_15: -444811657
-      minion_16: 1615385173
-      minion_17: -2102776289
-      minion_18: -1001335795
-      minion_19: -428384647
-      minion_2: 1589892088
-      minion_20: 1245301182
-      minion_21: 125956325
-      minion_22: -735252549
-      minion_23: -820389650
-      minion_24: -801332018
-      minion_25: -462449879
-      minion_26: 1961514394
-      minion_27: -1221754677
-      minion_28: 968495616
-      minion_29: -1387561927
-      minion_3: -231784458
-      minion_4: 247755456
-      minion_5: -527563053
-      minion_6: -1380630096
-      minion_7: -588007228
-      minion_8: -1049804608
-      minion_9: 1524689567
+      minion_reverse_0: -78884819
+      minion_reverse_1: 296608636
+      minion_reverse_10: -2074735552
+      minion_reverse_11: -1250099612
+      minion_reverse_12: -1901339103
+      minion_reverse_13: -532932158
+      minion_reverse_14: -1082798602
+      minion_reverse_15: 2010009516
+      minion_reverse_16: -1205442521
+      minion_reverse_17: -1994404177
+      minion_reverse_18: -1243097940
+      minion_reverse_19: 1649401598
+      minion_reverse_2: 292472030
+      minion_reverse_20: -1594756209
+      minion_reverse_21: -282585161
+      minion_reverse_22: -1131682084
+      minion_reverse_23: -2004779151
+      minion_reverse_24: 1797041757
+      minion_reverse_25: -902825106
+      minion_reverse_26: -819160478
+      minion_reverse_27: 228414187
+      minion_reverse_28: -1514648036
+      minion_reverse_29: -1327805845
+      minion_reverse_3: 697021087
+      minion_reverse_4: -513552117
+      minion_reverse_5: -676086507
+      minion_reverse_6: -1558541378
+      minion_reverse_7: -999618542
+      minion_reverse_8: -1604930693
+      minion_reverse_9: 476120726
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
