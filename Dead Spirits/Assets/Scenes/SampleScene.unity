@@ -340,6 +340,7 @@ MonoBehaviour:
   animator: {fileID: 1415071240}
   canMove: 1
   damagedTime: 0
+  spirit: {fileID: 5453485143901718979, guid: 895883bf2e019fe4c8d9cbc491139477, type: 3}
 --- !u!61 &1415071243
 BoxCollider2D:
   m_ObjectHideFlags: 0

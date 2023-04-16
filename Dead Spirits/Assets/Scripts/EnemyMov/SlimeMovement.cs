@@ -10,6 +10,7 @@ public class SlimeMovement : MonoBehaviour{
     public Animator animator;
     public bool canMove = true;
     public bool damagedTime = false;
+    public GameObject spirit;
 
 
     void Update (){
@@ -44,24 +45,35 @@ public class SlimeMovement : MonoBehaviour{
         canMove = true;
     }
 
-    IEnumerator stopMovement(){
+    IEnumerator stopMovement(bool kill){
         damagedTime = true;
         float time;
         float timer = 0f;
         
-        time = 4f;
+        time = 2f;
         while(timer < time){
             timer += Time.deltaTime;
             yield return null;
         }
+        if (kill)
+            Instantiate(spirit, transform.position, Quaternion.identity);
+            yield return new WaitForSeconds(2f);
+            Destroy(this.gameObject);
         damagedTime = false;
     }
 
     void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.tag == "PlayerAttack"){
             GetComponent<EnemyManager>().TakeDamage();
-            animator.SetTrigger("Damaged");
-            StartCoroutine(stopMovement());
+            if (GetComponent<EnemyManager>().HP == 0){
+                canMove=false;
+                animator.SetTrigger("Dead");
+                StartCoroutine(stopMovement(true));
+            }else{
+                animator.SetTrigger("Damaged");
+                StartCoroutine(stopMovement(false));
+            }
+            
         }
     }
 
