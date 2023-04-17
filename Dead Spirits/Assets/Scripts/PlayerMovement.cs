@@ -101,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator InvincibilityFrames()
     {   
         invincibility = true;
-        yield return new WaitForSeconds(5.0f);
+        yield return new WaitForSeconds(3.0f);
         invincibility= false;
         // GetComponent<BoxCollider2D>().enabled = false;
         // GetComponent<BoxCollider2D>().enabled = true;
@@ -119,7 +119,5 @@ public class PlayerMovement : MonoBehaviour
                 GetComponent<PlayerManager>().TakeDamage();
             }
         }
-        
     }
-
 }
