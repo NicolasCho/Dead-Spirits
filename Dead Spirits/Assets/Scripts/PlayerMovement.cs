@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
 
     public Camera cam;
-    public float runSpeed = 20.0f;
+    public float runSpeed = 5.0f;
 
     private Vector2 mousePos;
 
@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     float mouseAngle;
     public Animator animator;
     public float magicRange;
+    private bool invincibility =false;
 
     public bool canMove{get
     {
@@ -74,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
 
             if(canDodge){
                 if (Input.GetKeyDown("space"))
-                {
+                {   
                     animator.SetTrigger("Dodge");
                 }  
             }
@@ -97,15 +98,28 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    IEnumerator InvincibilityFrames()
+    {   
+        invincibility = true;
+        yield return new WaitForSeconds(5.0f);
+        invincibility= false;
+        // GetComponent<BoxCollider2D>().enabled = false;
+        // GetComponent<BoxCollider2D>().enabled = true;
+    }
+
     private void FixedUpdate(){  
         rb.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
 
     void OnTriggerEnter2D(Collider2D other){
-        if (other.gameObject.tag == "Enemy"){
-            animator.SetTrigger("Damaged");
-            GetComponent<PlayerManager>().TakeDamage();
+        if (!invincibility){
+            if (other.gameObject.tag == "Enemy"){
+                StartCoroutine(InvincibilityFrames());
+                animator.SetTrigger("Damaged");
+                GetComponent<PlayerManager>().TakeDamage();
+            }
         }
+        
     }
 
 }

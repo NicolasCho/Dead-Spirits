@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  radius: 10
+  radius: 20
   enemyFound: 0
   animator: {fileID: 2013542752380613760}
 --- !u!61 &2013542752380613765
