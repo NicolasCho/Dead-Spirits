@@ -9,6 +9,8 @@ public class SlimeMovement : MonoBehaviour{
     public float attackRange;
     public Animator animator;
     public bool canMove = true;
+    public bool damagedTime = false;
+    public GameObject spirit;
 
 
     void Update (){
@@ -34,17 +36,46 @@ public class SlimeMovement : MonoBehaviour{
     IEnumerator AttackCoroutine()
     {   
         yield return new WaitForSeconds(1f);
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime*1f);
+        if (!damagedTime)
+          transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime*1f);
         animator.SetTrigger("Attack");
+        yield return new WaitForSeconds(1f);
         canMove = false;
+        yield return new WaitForSeconds(3f);
+        canMove = true;
+    }
 
+    IEnumerator stopMovement(bool kill){
+        damagedTime = true;
+        float time;
         float timer = 0f;
-        float time = 2f;
+        
+        time = 2f;
         while(timer < time){
             timer += Time.deltaTime;
             yield return null;
         }
-        canMove = true;
+        if (kill){
+            Instantiate(spirit, transform.position, Quaternion.identity);
+            SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+            sprite.enabled = false;
+            yield return new WaitForSeconds(2f);
+            Destroy(this.gameObject);
+        }    
+        damagedTime = false;
     }
 
+    void OnTriggerEnter2D(Collider2D other){
+        if (other.gameObject.tag == "PlayerAttack" || other.gameObject.tag == "SummonedSpirit"){
+            GetComponent<EnemyManager>().TakeDamage();
+            if (GetComponent<EnemyManager>().HP == 0){
+                canMove=false;
+                animator.SetTrigger("Dead");
+                StartCoroutine(stopMovement(true));
+            }else{
+                animator.SetTrigger("Damaged");
+                StartCoroutine(stopMovement(false));
+            } 
+        }
+    }
 }

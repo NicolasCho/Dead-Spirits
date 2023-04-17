@@ -15,7 +15,8 @@ public class PlayerMovement : MonoBehaviour
     float vertical;
     float mouseAngle;
     public Animator animator;
-    private float inhibitMovement; 
+    public float magicRange;
+
     public bool canMove{get
     {
         return animator.GetBool("canMove");
@@ -80,6 +81,16 @@ public class PlayerMovement : MonoBehaviour
 
             if (Input.GetMouseButtonDown(1)){
                 animator.SetTrigger("Cast");
+                // Spawn spirits
+                Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position,magicRange);
+
+                foreach (var hitCollider in hitColliders)
+                {
+                    if (hitCollider.gameObject.tag == "Spirit"){
+                        hitCollider.gameObject.GetComponent<SpiritManager>().ActivateMagic();
+                    }
+                }
+                
             }
                 
 
@@ -92,6 +103,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.tag == "Enemy"){
+            animator.SetTrigger("Damaged");
             GetComponent<PlayerManager>().TakeDamage();
         }
     }
