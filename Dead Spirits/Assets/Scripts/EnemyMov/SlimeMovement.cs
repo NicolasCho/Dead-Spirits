@@ -66,7 +66,11 @@ public class SlimeMovement : MonoBehaviour{
     }
 
     void OnTriggerEnter2D(Collider2D other){
-        if (other.gameObject.tag == "PlayerAttack" || other.gameObject.tag == "SummonedSpirit"){
+        GameObject attacker = other.gameObject;
+        if (attacker.tag == "PlayerAttack" || attacker.tag == "SummonedSpirit"){
+            if (attacker.tag == "PlayerAttack")
+                attacker.GetComponentInParent<PlayerManager>().ComboSystem(false);
+
             GetComponent<EnemyManager>().TakeDamage();
             if (GetComponent<EnemyManager>().HP == 0){
                 canMove=false;

@@ -82,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (Input.GetMouseButtonDown(1)){
                 animator.SetTrigger("Cast");
+                GetComponent<PlayerManager>().ComboSystem(true);
                 // Spawn spirits
                 Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position,magicRange);
 
