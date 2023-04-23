@@ -20,7 +20,7 @@ public class SlimeMovement : MonoBehaviour{
            if (distance <= attackRange){
                 StartCoroutine(AttackCoroutine());
             }
-            else if (distance <= range)
+            else if (distance <= range && !damagedTime)
             {
                 transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
                 animator.SetFloat("deltax",transform.position.x - target.position.x);

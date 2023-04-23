@@ -81,21 +81,20 @@ public class PlayerMovement : MonoBehaviour
             }
 
             if (Input.GetMouseButtonDown(1)){
-                animator.SetTrigger("Cast");
-                GetComponent<PlayerManager>().ComboSystem(true);
-                // Spawn spirits
-                Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position,magicRange);
+                if(GetComponent<PlayerManager>().comboCount == 3){
+                    animator.SetTrigger("Cast");
+                    GetComponent<PlayerManager>().ComboSystem(true);
+                    // Spawn spirits
+                    Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position,magicRange);
 
-                foreach (var hitCollider in hitColliders)
-                {
-                    if (hitCollider.gameObject.tag == "Spirit"){
-                        hitCollider.gameObject.GetComponent<SpiritManager>().ActivateMagic();
+                    foreach (var hitCollider in hitColliders)
+                    {
+                        if (hitCollider.gameObject.tag == "Spirit"){
+                            hitCollider.gameObject.GetComponent<SpiritManager>().ActivateMagic();
+                        }
                     }
-                }
-                
+                }   
             }
-                
-
         }
     }
 
