@@ -25,7 +25,7 @@ public class SummonedSpiritMovement : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other){
-        if (other.gameObject.tag == "Enemy"){
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Boss"){
             Destroy(this.gameObject);
         }
     }
@@ -40,17 +40,16 @@ public class SummonedSpiritMovement : MonoBehaviour
 
         foreach (var hitCollider in hitColliders)
         {
-            if (hitCollider.gameObject.tag == "Enemy"){
+            if (hitCollider.gameObject.tag == "Enemy" || hitCollider.gameObject.tag == "Boss"){
                 enemyFound = true;
                 distance = Vector2.Distance(transform.position, hitCollider.gameObject.transform.position);
                 if (distance < minDistance){
                     closest = hitCollider.gameObject;
+                    target = closest;
                 }
             }
         }
-        if(enemyFound)
-            target = GameObject.FindWithTag("Enemy");
-        else
+        if(!enemyFound)
             Destroy(this.gameObject);
     }
 }
