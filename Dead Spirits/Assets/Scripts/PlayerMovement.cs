@@ -113,7 +113,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
         if (!invincibility){
-            if (other.gameObject.tag == "Enemy"){
+            if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Boss"){
                 StartCoroutine(InvincibilityFrames());
                 animator.SetTrigger("Damaged");
                 GetComponent<PlayerManager>().TakeDamage();
