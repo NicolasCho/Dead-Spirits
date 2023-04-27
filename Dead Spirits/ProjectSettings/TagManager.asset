@@ -8,6 +8,8 @@ TagManager:
   - PlayerAttack
   - Spirit
   - SummonedSpirit
+  - Boss
+  - Bomb
   layers:
   - Default
   - TransparentFX

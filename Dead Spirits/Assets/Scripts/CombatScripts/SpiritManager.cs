@@ -6,10 +6,24 @@ public class SpiritManager : MonoBehaviour
 {
     public GameObject summonedSpirit;
 
-    public void ActivateMagic(){
+    public Animator animator;
+
+    public void ActivateMagic(int magic){
+        if (magic == 0)
+            SummonMagic();
+        else if (magic == 1)
+            ExplosionMagic();
+    }
+
+    public void SummonMagic(){
         Instantiate(summonedSpirit, transform.position, Quaternion.identity);
         SpriteRenderer sprite = GetComponent<SpriteRenderer>();
         sprite.enabled = false;
+        StartCoroutine(destroyObject());
+    }
+
+    public void ExplosionMagic(){
+        animator.SetTrigger("magic");
         StartCoroutine(destroyObject());
     }
 
@@ -17,7 +31,7 @@ public class SpiritManager : MonoBehaviour
         float time;
         float timer = 0f;
         
-        time = 1f;
+        time = 2f;
         while(timer < time){
             timer += Time.deltaTime;
             yield return null;

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ab7d2fabe3e55344bb4a7a2ae35c5fbc
+guid: a35ad9b088b15c940aeff2de47ce6c01
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,70 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: slime-magma-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 150
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 186b86db89785064fbf3268229cdbdc2
-      internalID: -1788608444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime-magma-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 150
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a009136c845a5c428556a9037f47e2c
-      internalID: 222671200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime-magma-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 150
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ab273f18b58cb8468ffadf41e67934b
-      internalID: -102530067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime-magma-Sheet_3
+      name: slime-magma-Sheet_reverse_0
       rect:
         serializedVersion: 2
         x: 96
@@ -206,18 +143,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daf60ba0f36062a47afb0543d1c69246
-      internalID: 1957089041
+      spriteID: e97c55dbd877a3544a2dab3c0380ed5f
+      internalID: -1425995105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_4
+      name: slime-magma-Sheet_reverse_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 125
+        x: 128
+        y: 150
         width: 32
         height: 25
       alignment: 0
@@ -227,18 +164,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7007832d6e280ae4dbaf208af965f0b2
-      internalID: -842087073
+      spriteID: b2f5c4cabc5c2dd4c8943f3833be3252
+      internalID: -609317237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_5
+      name: slime-magma-Sheet_reverse_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 125
+        x: 160
+        y: 150
         width: 32
         height: 25
       alignment: 0
@@ -248,18 +185,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 200b112512376114bb7a63581d88c580
-      internalID: -982041798
+      spriteID: b5e6b82b4f37f4d45afd2cb9f7f1f165
+      internalID: 975511357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_6
+      name: slime-magma-Sheet_reverse_3
       rect:
         serializedVersion: 2
-        x: 64
-        y: 125
+        x: 192
+        y: 150
         width: 32
         height: 25
       alignment: 0
@@ -269,101 +206,101 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1861e035984288846bc60da9dc33cc49
-      internalID: -284277257
+      spriteID: 8bd2b5d57e315b34b8fd07365d15d1d1
+      internalID: 1813019277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 125
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a726b46a77ab8e448ade39f45aac540
-      internalID: 1996498182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime-magma-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 100
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07ddce0c0440e9e4794c8abebb74185b
-      internalID: 1275311723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime-magma-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 100
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13b664d4e588c364899ad37ac990f71c
-      internalID: -1189751889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime-magma-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 100
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0955ae27c1d77b14e8bc4e0cf91da2a2
-      internalID: -1720886271
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime-magma-Sheet_11
+      name: slime-magma-Sheet_reverse_4
       rect:
         serializedVersion: 2
         x: 96
+        y: 125
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb73c4e0d2463b40b67bfc30bb87d93
+      internalID: -1854961758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime-magma-Sheet_reverse_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 125
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3f3258fd38ee54886ce894e9ba299d
+      internalID: 1646315501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime-magma-Sheet_reverse_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 125
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f910156165c35d3489672449565a21a5
+      internalID: 589542816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime-magma-Sheet_reverse_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 125
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc9fe75db2c3df44bfb548b677551a0
+      internalID: 1101507010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime-magma-Sheet_reverse_8
+      rect:
+        serializedVersion: 2
+        x: 96
         y: 100
         width: 32
         height: 25
@@ -374,18 +311,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcf2cc835a094c34aaaca1cbc991785e
-      internalID: -372429584
+      spriteID: 41d57924355391d4a85a6b96c9f92304
+      internalID: -1994381327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_12
+      name: slime-magma-Sheet_reverse_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 75
+        x: 128
+        y: 100
         width: 32
         height: 25
       alignment: 0
@@ -395,18 +332,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a4f83d3a8b5a87488e0df1aa6513e3e
-      internalID: -522836785
+      spriteID: 5eba35676ad4547439c66ecfb01d81c1
+      internalID: -421032157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_13
+      name: slime-magma-Sheet_reverse_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 75
+        x: 160
+        y: 100
         width: 32
         height: 25
       alignment: 0
@@ -416,14 +353,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1444787eb8e7864b955d52a2582955c
-      internalID: -1473388189
+      spriteID: ca7a36a2921ef064f86749f4a7ac0e6a
+      internalID: 1783616636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_14
+      name: slime-magma-Sheet_reverse_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 100
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7603b435c28ca4db37414070514e47
+      internalID: 1494965591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime-magma-Sheet_reverse_12
       rect:
         serializedVersion: 2
         x: 64
@@ -437,14 +395,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 009a2e2b2cd77f1479832d0cad96121b
-      internalID: 354455375
+      spriteID: fd556128100420543a43facd261d6e15
+      internalID: -1579428457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_15
+      name: slime-magma-Sheet_reverse_13
       rect:
         serializedVersion: 2
         x: 96
@@ -458,14 +416,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63779e5bc48d27241bcb9ee40f1c0692
-      internalID: 1218570536
+      spriteID: 55de23eb1f7389a43be3561a23d6b4c4
+      internalID: -1845019067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_16
+      name: slime-magma-Sheet_reverse_14
       rect:
         serializedVersion: 2
         x: 128
@@ -479,18 +437,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14df20cf2c3f2e44e9463a08461b5ebf
-      internalID: -925410654
+      spriteID: 186cae1365aaea94681dd7e356faacd5
+      internalID: -1523713504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_17
+      name: slime-magma-Sheet_reverse_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 50
+        x: 160
+        y: 75
         width: 32
         height: 25
       alignment: 0
@@ -500,18 +458,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1df961088a974f047b581a310138bd29
-      internalID: -360032932
+      spriteID: 423dbb5ce962e784fb821f98c1de36a3
+      internalID: 189834949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_18
+      name: slime-magma-Sheet_reverse_16
       rect:
         serializedVersion: 2
-        x: 32
-        y: 50
+        x: 192
+        y: 75
         width: 32
         height: 25
       alignment: 0
@@ -521,35 +479,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0caa6ae335bbbdb459e821dd1e3454bd
-      internalID: -1043786132
+      spriteID: c706b9c8c95890f48b26f0cfa60c3d1d
+      internalID: 1002720098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_19
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 50
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fb97be3b5649cd4d9bcfe80dfe89e28
-      internalID: -1483109332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime-magma-Sheet_20
+      name: slime-magma-Sheet_reverse_17
       rect:
         serializedVersion: 2
         x: 96
@@ -563,18 +500,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41cf9fb785759354194dd02179ecb861
-      internalID: 2040560559
+      spriteID: 1845cf255fcc4554ba6497f856cac01c
+      internalID: 1936470386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_21
+      name: slime-magma-Sheet_reverse_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 25
+        x: 128
+        y: 50
         width: 32
         height: 25
       alignment: 0
@@ -584,18 +521,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb66e3ba6dbab43419f701ab97da7bb8
-      internalID: -1742122929
+      spriteID: 5976ab956ee442149accc663253a418c
+      internalID: -1677892248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_22
+      name: slime-magma-Sheet_reverse_19
       rect:
         serializedVersion: 2
-        x: 32
-        y: 25
+        x: 160
+        y: 50
         width: 32
         height: 25
       alignment: 0
@@ -605,18 +542,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaeb1bb5d86978642b45ad3f9c91fd69
-      internalID: 656621393
+      spriteID: debfe1a47f10c304294306dfb86feba0
+      internalID: -373058833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_23
+      name: slime-magma-Sheet_reverse_20
       rect:
         serializedVersion: 2
-        x: 64
-        y: 25
+        x: 192
+        y: 50
         width: 32
         height: 25
       alignment: 0
@@ -626,101 +563,101 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b18a1a8a29848894183d6cace3cbe9ef
-      internalID: 1493182596
+      spriteID: 9a8da8619ab260a47b717059194f76e9
+      internalID: 1022433006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime-magma-Sheet_24
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 25
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f23f3e8f1dd97c45a31820448954106
-      internalID: -898968889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime-magma-Sheet_25
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05e8b7146d63d4a438017142c3e674d8
-      internalID: 1475757745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime-magma-Sheet_26
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e611dad7fdc0a084690e3823d68ee2f0
-      internalID: 48854622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime-magma-Sheet_27
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4dda021bf5e6fe340a4d36d0c651b937
-      internalID: 382026527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime-magma-Sheet_28
+      name: slime-magma-Sheet_reverse_21
       rect:
         serializedVersion: 2
         x: 96
+        y: 25
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f198854f7c602684c979457f478fce54
+      internalID: 50378764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime-magma-Sheet_reverse_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 25
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6b19c33624b35439b51667a72eaba4
+      internalID: 64432456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime-magma-Sheet_reverse_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 25
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355b10686f80b044e826a08c6c352c2e
+      internalID: 1627047201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime-magma-Sheet_reverse_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 25
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b5ab93071a71247b7f2001cff4ee78
+      internalID: 89134096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime-magma-Sheet_reverse_25
+      rect:
+        serializedVersion: 2
+        x: 96
         y: 0
         width: 32
         height: 25
@@ -731,8 +668,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09adc4a9de63bb24f850dc889cb2ed5b
-      internalID: 2115977815
+      spriteID: e885fdc6e14ed4c4ca2afd5d231440ba
+      internalID: 1079204710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime-magma-Sheet_reverse_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13d68ec0b7ed3341a8dbd395aebbd46
+      internalID: 1691250188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime-magma-Sheet_reverse_27
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2e14996ccf1d84fb9874279ed4df82
+      internalID: -568474715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime-magma-Sheet_reverse_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8d7d4006473dc41aca8dade7b100ff
+      internalID: 1237668635
       vertices: []
       indices: 
       edges: []
@@ -748,35 +748,35 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      slime-magma-Sheet_0: -1788608444
-      slime-magma-Sheet_1: 222671200
-      slime-magma-Sheet_10: -1720886271
-      slime-magma-Sheet_11: -372429584
-      slime-magma-Sheet_12: -522836785
-      slime-magma-Sheet_13: -1473388189
-      slime-magma-Sheet_14: 354455375
-      slime-magma-Sheet_15: 1218570536
-      slime-magma-Sheet_16: -925410654
-      slime-magma-Sheet_17: -360032932
-      slime-magma-Sheet_18: -1043786132
-      slime-magma-Sheet_19: -1483109332
-      slime-magma-Sheet_2: -102530067
-      slime-magma-Sheet_20: 2040560559
-      slime-magma-Sheet_21: -1742122929
-      slime-magma-Sheet_22: 656621393
-      slime-magma-Sheet_23: 1493182596
-      slime-magma-Sheet_24: -898968889
-      slime-magma-Sheet_25: 1475757745
-      slime-magma-Sheet_26: 48854622
-      slime-magma-Sheet_27: 382026527
-      slime-magma-Sheet_28: 2115977815
-      slime-magma-Sheet_3: 1957089041
-      slime-magma-Sheet_4: -842087073
-      slime-magma-Sheet_5: -982041798
-      slime-magma-Sheet_6: -284277257
-      slime-magma-Sheet_7: 1996498182
-      slime-magma-Sheet_8: 1275311723
-      slime-magma-Sheet_9: -1189751889
+      slime-magma-Sheet_reverse_0: -1425995105
+      slime-magma-Sheet_reverse_1: -609317237
+      slime-magma-Sheet_reverse_10: 1783616636
+      slime-magma-Sheet_reverse_11: 1494965591
+      slime-magma-Sheet_reverse_12: -1579428457
+      slime-magma-Sheet_reverse_13: -1845019067
+      slime-magma-Sheet_reverse_14: -1523713504
+      slime-magma-Sheet_reverse_15: 189834949
+      slime-magma-Sheet_reverse_16: 1002720098
+      slime-magma-Sheet_reverse_17: 1936470386
+      slime-magma-Sheet_reverse_18: -1677892248
+      slime-magma-Sheet_reverse_19: -373058833
+      slime-magma-Sheet_reverse_2: 975511357
+      slime-magma-Sheet_reverse_20: 1022433006
+      slime-magma-Sheet_reverse_21: 50378764
+      slime-magma-Sheet_reverse_22: 64432456
+      slime-magma-Sheet_reverse_23: 1627047201
+      slime-magma-Sheet_reverse_24: 89134096
+      slime-magma-Sheet_reverse_25: 1079204710
+      slime-magma-Sheet_reverse_26: 1691250188
+      slime-magma-Sheet_reverse_27: -568474715
+      slime-magma-Sheet_reverse_28: 1237668635
+      slime-magma-Sheet_reverse_3: 1813019277
+      slime-magma-Sheet_reverse_4: -1854961758
+      slime-magma-Sheet_reverse_5: 1646315501
+      slime-magma-Sheet_reverse_6: 589542816
+      slime-magma-Sheet_reverse_7: 1101507010
+      slime-magma-Sheet_reverse_8: -1994381327
+      slime-magma-Sheet_reverse_9: -421032157
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

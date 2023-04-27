@@ -65,13 +65,16 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if(canInput){
-            if (Input.GetMouseButtonDown(0))
-                {
+            if (Input.GetMouseButtonDown(0)){
                     Vector2 lookDir = mousePos - rb.position;
                     mouseAngle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
                     animator.SetFloat("Angle", mouseAngle);
                     animator.SetTrigger("Attack");
-                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.LeftShift)){
+                GetComponent<PlayerManager>().ChangeMagic();
+            }
 
             if(canDodge){
                 if (Input.GetKeyDown("space"))
@@ -82,18 +85,39 @@ public class PlayerMovement : MonoBehaviour
 
             if (Input.GetMouseButtonDown(1)){
                 if(GetComponent<PlayerManager>().comboCount == 3){
-                    animator.SetTrigger("Cast");
-                    GetComponent<PlayerManager>().ComboSystem(true);
-                    // Spawn spirits
-                    Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position,magicRange);
-
-                    foreach (var hitCollider in hitColliders)
-                    {
-                        if (hitCollider.gameObject.tag == "Spirit"){
-                            hitCollider.gameObject.GetComponent<SpiritManager>().ActivateMagic();
-                        }
-                    }
+                    if(GetComponent<PlayerManager>().currMagic == 0)
+                        SummonMagic();
+                    else if(GetComponent<PlayerManager>().currMagic == 1)
+                        ExplosionMagic();
                 }   
+            }
+        }
+    }
+
+    public void SummonMagic(){
+        animator.SetTrigger("Cast");
+        GetComponent<PlayerManager>().ComboSystem(true);
+        // Spawn spirits
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position,magicRange);
+
+        foreach (var hitCollider in hitColliders)
+        {
+            if (hitCollider.gameObject.tag == "Spirit"){
+                hitCollider.gameObject.GetComponent<SpiritManager>().ActivateMagic(0);
+            }
+        }
+    }
+
+    public void ExplosionMagic(){
+        animator.SetTrigger("Cast");
+        GetComponent<PlayerManager>().ComboSystem(true);
+        // Spawn spirits
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position,magicRange);
+
+        foreach (var hitCollider in hitColliders)
+        {
+            if (hitCollider.gameObject.tag == "Spirit"){
+                hitCollider.gameObject.GetComponent<SpiritManager>().ActivateMagic(1);
             }
         }
     }
@@ -103,8 +127,6 @@ public class PlayerMovement : MonoBehaviour
         invincibility = true;
         yield return new WaitForSeconds(3.0f);
         invincibility= false;
-        // GetComponent<BoxCollider2D>().enabled = false;
-        // GetComponent<BoxCollider2D>().enabled = true;
     }
 
     private void FixedUpdate(){  
@@ -113,7 +135,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
         if (!invincibility){
-            if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Boss"){
+            if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Boss" || (other.gameObject.tag == "Bomb" && other is BoxCollider2D)){
                 StartCoroutine(InvincibilityFrames());
                 animator.SetTrigger("Damaged");
                 GetComponent<PlayerManager>().TakeDamage();

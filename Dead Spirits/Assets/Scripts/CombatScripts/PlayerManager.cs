@@ -11,7 +11,9 @@ public class PlayerManager : MonoBehaviour
 
     public GameObject[] hearts;
     public GameObject[] gauges;
+    public GameObject[] spells;
 
+    public int currMagic = 0;
     public int comboCount=0;
 
     public void TakeDamage(){
@@ -34,5 +36,18 @@ public class PlayerManager : MonoBehaviour
         else if(comboCount < 3)
             comboCount += 1;
         gauges[comboCount].GetComponent<SpriteRenderer>().enabled = true;
+    }
+
+    public void ChangeMagic(){
+        if (spells.Length>1){
+            spells[currMagic].GetComponent<SpriteRenderer>().enabled = false;
+            if(currMagic == 0){
+                currMagic = 1;
+            }
+            else{
+                currMagic = 0;
+            }
+            spells[currMagic].GetComponent<SpriteRenderer>().enabled = true;
+        }
     }
 }

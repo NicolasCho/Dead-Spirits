@@ -51,7 +51,7 @@ public class SkeletonMovement : MonoBehaviour{
 
     void OnTriggerEnter2D(Collider2D other){
         GameObject attacker = other.gameObject;
-        if (attacker.tag == "PlayerAttack" || attacker.tag == "SummonedSpirit"){
+        if (attacker.tag == "PlayerAttack" || attacker.tag == "SummonedSpirit" || (other.gameObject.tag == "Spirit" && other is BoxCollider2D)){
             if (attacker.tag == "PlayerAttack")
                 attacker.GetComponentInParent<PlayerManager>().ComboSystem(false);
 
