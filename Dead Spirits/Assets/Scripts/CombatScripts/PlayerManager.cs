@@ -13,6 +13,7 @@ public class PlayerManager : MonoBehaviour
     public GameObject[] gauges;
     public GameObject[] spells;
 
+    public bool gotMagic=false;
     public int currMagic = 0;
     public int comboCount=0;
 
@@ -38,8 +39,10 @@ public class PlayerManager : MonoBehaviour
         gauges[comboCount].GetComponent<SpriteRenderer>().enabled = true;
     }
 
+
+
     public void ChangeMagic(){
-        if (spells.Length>1){
+        if (gotMagic){
             spells[currMagic].GetComponent<SpriteRenderer>().enabled = false;
             if(currMagic == 0){
                 currMagic = 1;
