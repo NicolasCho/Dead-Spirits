@@ -138,7 +138,7 @@ public class PlayerMovement : MonoBehaviour
             if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Boss" || (other.gameObject.tag == "Bomb" && other is BoxCollider2D)){
                 StartCoroutine(InvincibilityFrames());
                 animator.SetTrigger("Damaged");
-                GetComponent<PlayerManager>().TakeDamage();
+                GetComponent<PlayerManager>().TakeDamage(1);
             }
         }
     }

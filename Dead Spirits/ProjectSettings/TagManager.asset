@@ -10,6 +10,7 @@ TagManager:
   - SummonedSpirit
   - Boss
   - Bomb
+  - FinalBoss
   layers:
   - Default
   - TransparentFX

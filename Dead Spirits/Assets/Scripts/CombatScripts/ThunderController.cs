@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ThunderController : MonoBehaviour
 {
-    float ActivationCD = 3.0f;
+    public float ActivationCD = 3.0f;
     public Animator animator;
 
     // Update is called once per frame

@@ -7,8 +7,8 @@ public class EnemyManager : MonoBehaviour
     public int HP;
     public int Str;
 
-    public void TakeDamage(){
-        HP -= 1;
+    public void TakeDamage(int damage){
+        HP -= damage;
     }
 
 }

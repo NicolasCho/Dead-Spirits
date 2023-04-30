@@ -17,8 +17,8 @@ public class PlayerManager : MonoBehaviour
     public int currMagic = 0;
     public int comboCount=0;
 
-    public void TakeDamage(){
-        currHP -= 1;
+    public void TakeDamage(int damage){
+        currHP -= damage;
         hearts[currHP].GetComponent<SpriteRenderer>().enabled =false;
         if (currHP == 0){
             PlayerDead();

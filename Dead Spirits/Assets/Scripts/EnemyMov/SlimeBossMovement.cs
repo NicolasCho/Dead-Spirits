@@ -84,7 +84,7 @@ public class SlimeBossMovement : MonoBehaviour{
             if (attacker.tag == "PlayerAttack")
                 attacker.GetComponentInParent<PlayerManager>().ComboSystem(false);
 
-            GetComponent<EnemyManager>().TakeDamage();
+            GetComponent<EnemyManager>().TakeDamage(1);
             if (GetComponent<EnemyManager>().HP == 0){
                 canMove=false;
                 animator.SetTrigger("Dead");
