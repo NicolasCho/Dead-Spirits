@@ -31,14 +31,18 @@ public class Interactable : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isInRange = true;
+            collision.gameObject.GetComponent<InteractionKey>().NotifyPlayer();
+            Debug.Log("Player in range");
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             isInRange = false;
+            collision.gameObject.GetComponent<InteractionKey>().DeNotifyPlayer();
+            Debug.Log("Player not in range");
         }
     }
 }

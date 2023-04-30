@@ -16,7 +16,6 @@ public class Dialogue : MonoBehaviour
     {
         gameObject.SetActive(false);
         textComponent.text = string.Empty;
-        StartDialogue();
     }
 
     // Update is called once per frame
@@ -36,7 +35,7 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    void StartDialogue()
+    public void StartDialogue()
     {
         index = 0;
         player.GetComponent<PlayerMovement>().enabled = false;
