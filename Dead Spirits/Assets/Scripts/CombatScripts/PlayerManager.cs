@@ -6,6 +6,7 @@ public class PlayerManager : MonoBehaviour
 {   
     public int HP = 5;
     public int Str;
+    public Transform respawnCoordinates;
 
     public int currHP = 5;
 
@@ -28,6 +29,7 @@ public class PlayerManager : MonoBehaviour
     public void PlayerDead(){
         //Melhorar isso aqui
         GetComponent<SpriteRenderer>().enabled = false;
+        RespawnPlayer();
     }
 
     public void ComboSystem(bool resetCombo){
@@ -52,5 +54,10 @@ public class PlayerManager : MonoBehaviour
             }
             spells[currMagic].GetComponent<SpriteRenderer>().enabled = true;
         }
+    }
+
+    public void RespawnPlayer(){
+        GetComponent<SpriteRenderer>().enabled = true;
+        transform.position = new Vector2(respawnCoordinates.position.x, respawnCoordinates.position.y);
     }
 }
