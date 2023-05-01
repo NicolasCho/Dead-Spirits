@@ -37,7 +37,7 @@ public class SlimeBombMovement : MonoBehaviour{
         float timer = 0f;
         animator.SetTrigger("Explode");
 
-        time = 5f;
+        time = 3f;
         while(timer < time){
             timer += Time.deltaTime;
             yield return null;
