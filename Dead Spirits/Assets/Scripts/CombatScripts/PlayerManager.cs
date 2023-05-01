@@ -28,6 +28,10 @@ public class PlayerManager : MonoBehaviour
 
     public void PlayerDead(){
         //Melhorar isso aqui
+        foreach (GameObject heart in hearts){
+            heart.GetComponent<SpriteRenderer>().enabled = true;
+        }
+        currHP = 5;
         GetComponent<SpriteRenderer>().enabled = false;
         RespawnPlayer();
     }

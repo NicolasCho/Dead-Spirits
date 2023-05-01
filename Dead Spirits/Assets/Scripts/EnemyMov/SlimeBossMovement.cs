@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 public class SlimeBossMovement : MonoBehaviour{
     public Transform target;
+    public GameObject spawners;
     public float speed = 2f;
     public float range = 8f;
     private float distance;
@@ -59,8 +60,10 @@ public class SlimeBossMovement : MonoBehaviour{
     }
 
     IEnumerator stopMovement(bool kill){
-        if(kill)
+        if(kill){
             GetComponent<BoxCollider2D>().enabled = false;
+            spawners.GetComponent<SpawnerController>().StopSpawning();
+          }
         damagedTime = true;
         float time;
         float timer = 0f;

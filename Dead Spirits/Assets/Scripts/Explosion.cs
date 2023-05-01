@@ -20,7 +20,7 @@ public class Explosion : MonoBehaviour
 
     public void Explode()
     {
-        if(!player.GetComponent<PlayerManager>().gotMagic)
+        if(player.GetComponent<PlayerManager>().gotMagic)
         {
             director.SetActive(true);
         }

@@ -32,7 +32,6 @@ public class Interactable : MonoBehaviour
         {
             isInRange = true;
             collision.gameObject.GetComponent<InteractionKey>().NotifyPlayer();
-            Debug.Log("Player in range");
         }
     }
 
@@ -42,7 +41,6 @@ public class Interactable : MonoBehaviour
         {
             isInRange = false;
             collision.gameObject.GetComponent<InteractionKey>().DeNotifyPlayer();
-            Debug.Log("Player not in range");
         }
     }
 }

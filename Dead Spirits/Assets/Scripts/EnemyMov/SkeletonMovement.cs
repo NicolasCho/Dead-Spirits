@@ -57,7 +57,10 @@ public class SkeletonMovement : MonoBehaviour{
             if (attacker.tag == "PlayerAttack")
                 attacker.GetComponentInParent<PlayerManager>().ComboSystem(false);
 
-            GetComponent<EnemyManager>().TakeDamage(1);
+            if(attacker.tag == "Spirit")
+                GetComponent<EnemyManager>().TakeDamage(3);
+            else
+                GetComponent<EnemyManager>().TakeDamage(1);
             if (GetComponent<EnemyManager>().HP == 0){
                 canMove=false;
                 //animator.SetTrigger("Dead");
