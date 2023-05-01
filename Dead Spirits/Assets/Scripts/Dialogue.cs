@@ -9,6 +9,7 @@ public class Dialogue : MonoBehaviour
     public string[] lines;
     public float textSpeed;
     public GameObject player;
+    public GameObject dialogo;
 
     private int index;
     // Start is called before the first frame update
@@ -39,6 +40,7 @@ public class Dialogue : MonoBehaviour
     {
         index = 0;
         player.GetComponent<PlayerMovement>().enabled = false;
+        dialogo.SetActive(false);
         gameObject.SetActive(true);
         StartCoroutine(TypeLine());
     }
@@ -63,6 +65,7 @@ public class Dialogue : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+            dialogo.SetActive(true);
             player.GetComponent<PlayerMovement>().enabled = true;
         }
     }

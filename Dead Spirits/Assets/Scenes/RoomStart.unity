@@ -27310,6 +27310,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64de5f1e75188f843bbc32dab1280785, type: 3}
+--- !u!1 &1783882064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3585729283532034763, guid: 64de5f1e75188f843bbc32dab1280785, type: 3}
+  m_PrefabInstance: {fileID: 1783882063}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1793952600
 GameObject:
   m_ObjectHideFlags: 0
@@ -27862,6 +27867,7 @@ MonoBehaviour:
   - 'Wisp: Welp. You too have fun dying out there!'
   textSpeed: 0.1
   player: {fileID: 1567830118}
+  dialogo: {fileID: 1783882064}
 --- !u!1 &2022196186
 GameObject:
   m_ObjectHideFlags: 0
