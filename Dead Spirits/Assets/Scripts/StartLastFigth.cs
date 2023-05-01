@@ -10,6 +10,7 @@ public class StartLastFigth : MonoBehaviour
     public float textSpeed;
     public GameObject player;
     public GameObject director;
+    public GameObject dialogo;
 
     private int index;
     // Start is called before the first frame update
@@ -40,6 +41,7 @@ public class StartLastFigth : MonoBehaviour
     {
         index = 0;
         player.GetComponent<PlayerMovement>().enabled = false;
+        dialogo.SetActive(false);
         gameObject.SetActive(true);
         StartCoroutine(TypeLine());
     }
