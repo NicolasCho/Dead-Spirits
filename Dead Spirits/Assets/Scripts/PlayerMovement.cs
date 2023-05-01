@@ -79,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
             if(canDodge){
                 if (Input.GetKeyDown("space"))
                 {   
+                    StartCoroutine(InvincibilityFrames(2f));
                     animator.SetTrigger("Dodge");
                 }  
             }
@@ -122,10 +123,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    IEnumerator InvincibilityFrames()
+    IEnumerator InvincibilityFrames(float time)
     {   
         invincibility = true;
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(time);
         invincibility= false;
     }
 
@@ -136,7 +137,7 @@ public class PlayerMovement : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
         if (!invincibility){
             if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Boss" || (other.gameObject.tag == "Bomb" && other is BoxCollider2D)){
-                StartCoroutine(InvincibilityFrames());
+                StartCoroutine(InvincibilityFrames(3.0f));
                 animator.SetTrigger("Damaged");
                 GetComponent<PlayerManager>().TakeDamage(1);
             }

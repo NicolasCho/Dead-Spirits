@@ -17,7 +17,7 @@ public class SlimeBossMovement : MonoBehaviour{
     void Update (){
         distance = Vector2.Distance(transform.position, target.position);
         ExplosionCd -= Time.deltaTime;
-        if ( ExplosionCd < 0 ){
+        if ( ExplosionCd < 0 && canMove){
             StartCoroutine(UseExplosion());
             ExplosionCd = 5.0f;
         }
@@ -38,7 +38,7 @@ public class SlimeBossMovement : MonoBehaviour{
     IEnumerator UseExplosion()
     {      
         yield return new WaitForSeconds(3f);
-        if (!damagedTime)
+        if (!damagedTime && canMove)
           transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime*1f);
         animator.SetTrigger("ActivateMagic");
 
@@ -59,6 +59,8 @@ public class SlimeBossMovement : MonoBehaviour{
     }
 
     IEnumerator stopMovement(bool kill){
+        if(kill)
+            GetComponent<BoxCollider2D>().enabled = false;
         damagedTime = true;
         float time;
         float timer = 0f;
@@ -70,8 +72,6 @@ public class SlimeBossMovement : MonoBehaviour{
         }
         if (kill){
             Instantiate(spirit, transform.position, Quaternion.identity);
-            SpriteRenderer sprite = GetComponent<SpriteRenderer>();
-            sprite.enabled = false;
             yield return new WaitForSeconds(2f);
             Destroy(this.gameObject);
         }    

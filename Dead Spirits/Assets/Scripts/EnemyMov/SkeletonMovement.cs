@@ -30,6 +30,8 @@ public class SkeletonMovement : MonoBehaviour{
     }   
 
     IEnumerator stopMovement(bool kill){
+        if(kill)
+            GetComponent<BoxCollider2D>().enabled = false;
         damagedTime = true;
         float time;
         float timer = 0f;
