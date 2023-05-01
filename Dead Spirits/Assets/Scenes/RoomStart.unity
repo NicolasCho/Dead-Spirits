@@ -27845,7 +27845,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 346628432}
   lines:
-  - "Esp\xEDrito: Oh um viajante"
+  - 'Wisp: Well, hello there!'
+  - 'Wisp: You okay buddy?'
+  - 'Wisp: That was a pretty bad fall there.'
+  - 'Wanderer: ....'
+  - 'Wisp: What?'
+  - 'Wisp: Looking for a friend?'
+  - 'Wanderer: ...'
+  - 'Wisp: Blue clothes....'
+  - 'Wisp: Oh right!'
+  - 'Wisp: He went right inside'
+  - 'Wanderer: .....'
+  - 'Wisp: Although he''s probably dead already....'
+  - 'Wisp: Not like we can all survive the Corruption.'
+  - 'Wisp: Wahahahaha!'
+  - 'Wisp: Welp. You too have fun dying out there!'
   textSpeed: 0.1
   player: {fileID: 1567830118}
 --- !u!1 &2022196186
