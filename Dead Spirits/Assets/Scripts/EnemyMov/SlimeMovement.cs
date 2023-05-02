@@ -12,6 +12,11 @@ public class SlimeMovement : MonoBehaviour{
     public bool damagedTime = false;
     public GameObject spirit;
 
+    private AudioSource attack_sound; 
+
+    void Start(){
+        attack_sound = GetComponent<AudioSource>();
+    }
 
     void Update (){
         distance = Vector2.Distance(transform.position, target.position);
@@ -68,6 +73,7 @@ public class SlimeMovement : MonoBehaviour{
     void OnTriggerEnter2D(Collider2D other){
         GameObject attacker = other.gameObject;
         if (attacker.tag == "PlayerAttack" || attacker.tag == "SummonedSpirit"|| (attacker.tag == "Spirit" && other is BoxCollider2D)){
+            attack_sound.Play();
             if (attacker.tag == "PlayerAttack")
                 attacker.GetComponentInParent<PlayerManager>().ComboSystem(false);
 

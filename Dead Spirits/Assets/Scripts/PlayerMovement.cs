@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     public float magicRange;
     private bool invincibility =false;
 
+    private AudioSource attack_sound; 
+
     public bool canMove{get
     {
         return animator.GetBool("canMove");
@@ -38,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
     
 
     void Start(){
+        attack_sound = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>(); 
         cam = Camera.main;
     }
@@ -68,8 +71,10 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetMouseButtonDown(0)){
                     Vector2 lookDir = mousePos - rb.position;
                     mouseAngle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
+                    attack_sound.Play();
                     animator.SetFloat("Angle", mouseAngle);
                     animator.SetTrigger("Attack");
+                    
             }
 
             if (Input.GetKeyDown(KeyCode.LeftShift)){

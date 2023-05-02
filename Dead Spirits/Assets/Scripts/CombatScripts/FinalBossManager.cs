@@ -16,6 +16,12 @@ public class FinalBossManager : MonoBehaviour
     public int lifePhase = 10;
     public int HP = 2;
 
+    private AudioSource attack_sound; 
+
+    void Start(){
+        attack_sound = GetComponent<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -147,6 +153,7 @@ public class FinalBossManager : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.tag == "PlayerAttack"){
+            attack_sound.Play();
             lifePhase -= 1;
         }
         else if (other.tag == "SummonedSpirit"){
