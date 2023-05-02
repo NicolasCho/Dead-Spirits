@@ -18533,7 +18533,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 916188371}
   lines:
-  - "Amigo: Voc\xEA \xE9 um amigo"
+  - 'Friend: ...'
+  - 'Friend: who you seek is no more here. more here.'
   textSpeed: 0.1
   player: {fileID: 701580955}
   director: {fileID: 1606990535}
