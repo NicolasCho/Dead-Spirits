@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RoomBoss.unity
     guid: 4224e5a842f91504fb9f5deaeb2838ef
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 3b8e2ba1e43ea414294fa044c6906f7c
   m_configObjects: {}
