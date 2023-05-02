@@ -6,6 +6,12 @@ public class ThunderController : MonoBehaviour
 {
     public float ActivationCD = 3.0f;
     public Animator animator;
+    private AudioSource thunder;
+
+    void Start()
+    {   
+        thunder = GetComponent<AudioSource>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -20,6 +26,7 @@ public class ThunderController : MonoBehaviour
     IEnumerator ActivateMagic()
     {      
         animator.SetTrigger("ActivateMagic");
+        thunder.Play();
         yield return new WaitForSeconds(2f);
         Destroy(this.gameObject);
     }

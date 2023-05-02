@@ -8,10 +8,12 @@ public class Interactable : MonoBehaviour
     public bool isInRange;
     public KeyCode interactKey;
     public UnityEvent interactionAction;
+
+    private AudioSource inter; 
     // Start is called before the first frame update
     void Start()
-    {
-        
+    {   
+        inter = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,6 +23,7 @@ public class Interactable : MonoBehaviour
         {
             if(Input.GetKeyDown(interactKey))
             {
+                inter.Play();
                 interactionAction.Invoke();
             }
         }

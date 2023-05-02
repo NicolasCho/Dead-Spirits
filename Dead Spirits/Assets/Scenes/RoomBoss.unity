@@ -18534,7 +18534,7 @@ MonoBehaviour:
   textComponent: {fileID: 916188371}
   lines:
   - 'Friend: ...'
-  - 'Friend: who you seek is no more here. more here.'
+  - 'Friend: Who you seek is no more here.'
   textSpeed: 0.1
   player: {fileID: 701580955}
   director: {fileID: 1606990535}
