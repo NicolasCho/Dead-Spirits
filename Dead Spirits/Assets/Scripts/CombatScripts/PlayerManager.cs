@@ -23,7 +23,6 @@ public class PlayerManager : MonoBehaviour
     public int comboCount=0;
 
     void Start(){
-        print(gotExtraHealth);
         if (gotExtraHealth){
             extraHeart.GetComponent<SpriteRenderer>().enabled = true;
             extraHeartSpace.GetComponent<SpriteRenderer>().enabled = true;

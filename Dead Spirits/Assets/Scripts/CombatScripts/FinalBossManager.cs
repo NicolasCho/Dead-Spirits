@@ -26,9 +26,12 @@ public class FinalBossManager : MonoBehaviour
         }
         if (randomThunder < 0){
             var position = new Vector2(Random.Range(-10, 10), Random.Range(-10, 10));
-            var DP = Instantiate(thunderMagic, new Vector2(transform.position.x, transform.position.y)+position, Quaternion.identity);   
-            if (isAngry)
+            Instantiate(thunderMagic, new Vector2(transform.position.x, transform.position.y)+position, Quaternion.identity);   
+            if (isAngry){
+                var position_ = new Vector2(Random.Range(-10, 10), Random.Range(-10, 10));
+                Instantiate(thunderMagic, new Vector2(transform.position.x, transform.position.y)+position_, Quaternion.identity);
                 randomThunder = 1f;
+            }
             else
                 randomThunder = 3f;
         }
@@ -150,7 +153,7 @@ public class FinalBossManager : MonoBehaviour
             lifePhase -= 2;
         }
         if (lifePhase <= 0){
-            var position = new Vector2(Random.Range(-5, 5), Random.Range(-5, 5));
+            var position = new Vector2(Random.Range(-5, 5), Random.Range(5, 5));
             var DP = Instantiate(damagePoint, new Vector2(transform.position.x, transform.position.y)+position, Quaternion.identity);
             DP.GetComponent<DamagePointManager>().boss = gameObject;
             lifePhase = 10;
