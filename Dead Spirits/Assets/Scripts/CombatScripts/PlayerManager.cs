@@ -14,24 +14,59 @@ public class PlayerManager : MonoBehaviour
     public GameObject[] gauges;
     public GameObject[] spells;
 
+    public GameObject extraHeart;
+    public GameObject extraHeartSpace;
+
     public bool gotMagic=false;
+    public static bool gotExtraHealth = false;
     public int currMagic = 0;
     public int comboCount=0;
 
+    void Start(){
+        print(gotExtraHealth);
+        if (gotExtraHealth){
+            extraHeart.GetComponent<SpriteRenderer>().enabled = true;
+            extraHeartSpace.GetComponent<SpriteRenderer>().enabled = true;
+            HP = 6;
+            currHP = 6;
+        }
+    }
+
+    public void AddHealth(){
+        gotExtraHealth = true;
+        extraHeartSpace.GetComponent<SpriteRenderer>().enabled = true;
+        extraHeart.GetComponent<SpriteRenderer>().enabled = true;
+        foreach (GameObject heart in hearts){
+            heart.GetComponent<SpriteRenderer>().enabled = true;
+        }
+        HP = 6;
+        currHP = 6;
+    }
+
     public void TakeDamage(int damage){
-        currHP -= damage;
-        hearts[currHP].GetComponent<SpriteRenderer>().enabled =false;
+        if (currHP == 6){
+            currHP -= damage;
+            extraHeart.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        else{
+            currHP -= damage;
+            hearts[currHP].GetComponent<SpriteRenderer>().enabled =false;
+        }
         if (currHP == 0){
             PlayerDead();
         }
     } 
 
     public void PlayerDead(){
-        //Melhorar isso aqui
         foreach (GameObject heart in hearts){
             heart.GetComponent<SpriteRenderer>().enabled = true;
         }
-        currHP = 5;
+        if(gotExtraHealth){
+            extraHeart.GetComponent<SpriteRenderer>().enabled = true;
+            currHP = 6;
+        }
+        else
+            currHP = 5;
         GetComponent<SpriteRenderer>().enabled = false;
         RespawnPlayer();
     }
